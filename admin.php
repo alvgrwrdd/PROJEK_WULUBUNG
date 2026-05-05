@@ -115,12 +115,20 @@ $result = mysqli_query($conn, "SELECT * FROM bookings ORDER BY id DESC");
 
     <!-- ── HEADER ADMIN ───────────────────────── -->
     <div class="admin-hero">
-        <div class="container px-4">
-            <div class="section-label" style="color: var(--accent);">Manajemen Reservasi</div>
-            <h1 class="font-playfair fw-bold mb-2">Data Booking Masuk</h1>
-            <p style="color: rgba(255,255,255,0.7); font-size: 1.05rem;">Kelola semua permintaan reservasi Wulubung Hill di sini.</p>
+    <div class="container px-4">
+        <div class="d-flex justify-content-between align-items-end flex-wrap gap-3">
+            <div>
+                <div class="section-label" style="color: var(--accent);">Manajemen Reservasi</div>
+                <h1 class="font-playfair fw-bold mb-2">Data Booking Masuk</h1>
+                <p class="mb-0" style="color: rgba(255,255,255,0.7); font-size: 1.05rem;">Kelola semua permintaan reservasi Wulubung Hill di sini.</p>
+            </div>
+            <!-- TOMBOL TAMBAH BOOKING BARU -->
+            <a href="tambah_booking.php" class="btn text-white fw-bold px-4 py-2" style="background-color: var(--accent); border-radius: 0.8rem; box-shadow: 0 4px 15px rgba(229,154,47,0.3);">
+                Tambah Reservasi 
+            </a>
         </div>
     </div>
+</div>
 
     <!-- ── TABEL DATA ─────────────────────────── -->
     <div class="container px-4 position-relative z-2" style="padding-bottom: 7rem;">
