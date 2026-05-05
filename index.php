@@ -10,16 +10,19 @@
   
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;700&display=swap" rel="stylesheet" />
+ 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   
   <!-- Memanggil File CSS Eksternal -->
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style1.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 
   <!-- ── NAVBAR ─────────────────────────────── -->
   <nav id="navbar" class="custom-nav">
-    <a href="#" class="nav-logo">Wulu<span>bung</span></a>
+    <a href="#" class="nav-logo">
+  <img src="asset/wblo.png" alt="logo" class="logo-img"></a>
     <ul class="nav-links">
       <li><a href="#about">About</a></li>
       <li><a href="#packages">Packages</a></li>
@@ -29,11 +32,13 @@
     <a href="form.php" class="nav-cta">Book Now →</a>
     
     <!-- Hamburger icon untuk versi mobile (bisa dikembangkan pakai JS/Bootstrap Collapse) -->
-    <div class="hamburger d-lg-none d-flex flex-column gap-1" style="cursor:pointer;" onclick="document.querySelector('.nav-links').classList.toggle('d-flex');">
-      <span style="width:24px; height:2px; background:white;"></span>
-      <span style="width:24px; height:2px; background:white;"></span>
-      <span style="width:24px; height:2px; background:white;"></span>
-    </div>
+   <div class="hamburger d-lg-none d-flex flex-column gap-1"
+     onclick="document.querySelector('.nav-links').classList.toggle('d-flex');">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+
   </nav>
 
   <!-- ── HERO ───────────────────────────────── -->
@@ -41,66 +46,52 @@
     <div class="hero-bg"></div>
     <div class="hero-shape"></div>
     <div class="hero-content">
-      <div class="hero-eyebrow">Kaliurang, Lereng Merapi</div>
+
       <h1 class="hero-title">
         Be Fun,<br>Be Happy<br><span class="accent">&amp; Be Better</span>
       </h1>
       <p class="hero-sub">Outbound Team Building di Kaliurang untuk Gathering, Company Event, dan Fun Games bersama alam Merapi yang asri.</p>
       <div class="hero-actions">
         <a href="#packages" class="btn-custom-primary">Explore Packages ↓</a>
-        <a href="form.php" class="btn-custom-outline">Book Now</a>
+       
       </div>
     </div>
     
-    <!-- Hero Stats -->
-    <div class="hero-stats d-none d-md-flex">
-      <div class="stat">
-        <div class="stat-num">500+</div>
-        <div class="stat-label">Happy Groups</div>
-      </div>
-      <div class="stat">
-        <div class="stat-num">4</div>
-        <div class="stat-label">Lokasi Premium</div>
-      </div>
-      <div class="stat">
-        <div class="stat-num">3</div>
-        <div class="stat-label">Paket Pilihan</div>
-      </div>
-    </div>
+   
   </section>
 
   <!-- ── ABOUT ──────────────────────────────── -->
   <section id="about" class="pad-section">
     <div class="about-grid">
       <div class="about-visual reveal">
-        <div class="w-100 h-100" style="background-color:#e2e8f0; min-height:400px; border-radius:2rem; background-image:url('https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&q=80&w=600'); background-size:cover; background-position:center;"></div> 
-        <div class="about-badge">Since 2018</div>
+       <div class="about-visual-img" style="background-image: url('asset/bef.jpg');"></div>
+        <div class="about-badge">Since 2009</div>
         <div class="about-card">
-          <div style="font-size: 0.75rem; color: var(--text-light); margin-bottom: 0.3rem;">Peserta puas</div>
-          <div class="about-card-val">10.000+</div>
+        
+         
         </div>
       </div>
       <div class="reveal" style="transition-delay:0.15s">
         <div class="section-label">Tentang Kami</div>
-        <h2 class="section-title">Wulubung Hill — Outbound di Jantung Alam Merapi</h2>
+        <h2 class="section-title">Wulubung Hill — Outbound di Alam Merapi</h2>
         <p style="color:var(--text-mid); margin-bottom:2rem; line-height:1.8;">Wulubung Hill adalah destinasi outbound & team building terpercaya di kawasan Kaliurang, Yogyakarta. Kami menyediakan paket lengkap yang dirancang untuk mempererat tim, membangun karakter, dan menciptakan kenangan tak terlupakan.</p>
         <div class="d-flex flex-column gap-3">
           <div class="d-flex align-items-start gap-3">
-            <div class="feature-icon">🧭</div>
+            <div class="feature-icon"><i class="fa-solid fa-user-group"></i></div>
             <div>
               <strong class="d-block" style="color:var(--primary-mid)">Fasilitator Berpengalaman</strong>
               <span style="font-size:0.85rem; color:var(--text-light)">Tim profesional bersertifikat dengan jam terbang tinggi</span>
             </div>
           </div>
           <div class="d-flex align-items-start gap-3">
-            <div class="feature-icon">🏔️</div>
+            <div class="feature-icon"><i class="fa-solid fa-mountain"></i></div>
             <div>
               <strong class="d-block" style="color:var(--primary-mid)">Lokasi Alam Merapi</strong>
               <span style="font-size:0.85rem; color:var(--text-light)">Suasana segar, view menakjubkan, jauh dari hiruk pikuk kota</span>
             </div>
           </div>
           <div class="d-flex align-items-start gap-3">
-            <div class="feature-icon">🎯</div>
+             <div class="feature-icon"><i class="fa-solid fa-bullseye"></i></div>
             <div>
               <strong class="d-block" style="color:var(--primary-mid)">Paket Team Building Lengkap</strong>
               <span style="font-size:0.85rem; color:var(--text-light)">Dari fun games hingga paintball dan jeep adventure</span>
@@ -175,40 +166,89 @@
   </section>
 
   <!-- ── OTHER SERVICES ─────────────────────── -->
-  <section id="services" class="pad-section bg-light">
-    <div class="text-center mb-5 reveal">
-      <div class="section-label text-center d-inline-flex">Layanan Tambahan</div>
-      <h2 class="section-title text-center">Other Services</h2>
+ <section id="services">
+
+  <!-- BACKGROUND SLIDER -->
+  <div class="bg-slider">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <!-- HEADER -->
+  <div class="services-header reveal">
+    <center>
+    <div class="seclab">Layanan Tambahan</div>
+    <h2 class="sectit">Other Services</h2>
+    </center>
+  </div>
+
+  <!-- CONTENT -->
+  <section class="pricing-section">
+
+  <!-- PAINTBALL -->
+  <div class="price-card">
+    <div class="price-icon">
+      <i class="fas fa-crosshairs"></i>
     </div>
-    <div class="container">
-        <div class="row g-4">
-          <div class="col-md-4">
-              <div class="svc-card reveal h-100">
-                <span class="fs-1 mb-3 d-block">🎯</span>
-                <div class="svc-name">Paint Ball</div>
-                <p class="text-muted" style="font-size: 0.85rem;">Pengalaman paintball seru di medan terbuka dengan perlengkapan safety lengkap.</p>
-                <span class="svc-badge">Tersedia add-on</span>
-              </div>
-          </div>
-          <div class="col-md-4">
-              <div class="svc-card reveal h-100" style="transition-delay:0.1s">
-                <span class="fs-1 mb-3 d-block">🚙</span>
-                <div class="svc-name">Fun Jeep Tour</div>
-                <p class="text-muted" style="font-size: 0.85rem;">Jelajahi lereng Merapi dengan jeep offroad. Rute wisata vulkanik mendebarkan.</p>
-                <span class="svc-badge">Tersedia add-on</span>
-              </div>
-          </div>
-          <div class="col-md-4">
-              <div class="svc-card reveal h-100" style="transition-delay:0.2s">
-                <span class="fs-1 mb-3 d-block">🏍️</span>
-                <div class="svc-name">ATV Fun Trip</div>
-                <p class="text-muted" style="font-size: 0.85rem;">Naiki ATV menyusuri jalur alam yang menantang. Pengalaman seru untuk semua usia.</p>
-                <span class="svc-badge">Book terpisah</span>
-              </div>
-          </div>
-        </div>
+    <h2>Paint Ball</h2>
+    <p class="duration">Duration 1–2 Hour</p>
+    <h3>Rp. 120.000 / Pax</h3>
+    <p class="note">Minimum 20 Pax</p>
+
+    <div class="divider"></div>
+
+    <p class="label">Facilities</p>
+    <p class="desc">
+      Referee · Vest · Uniform · Goggles · Weapons · Bullets · Location
+    </p>
+  </div>
+
+  <!-- JEEP -->
+  <div class="price-card">
+    <div class="price-icon">
+      <i class="fas fa-car"></i>
     </div>
-  </section>
+    <h2>Fun Jeep Tour</h2>
+    <p class="duration">Duration 2.5 Hour</p>
+    <h3>Rp. 450.000 / Jip</h3>
+    <p class="note">Maximum 4 Person per Jip</p>
+
+    <div class="divider"></div>
+
+    <p class="label">Facilities</p>
+    <p class="desc">
+      Driver Guide · Jeep Willys · Helmet
+    </p>
+
+    <div class="divider"></div>
+
+    <p class="label">Location</p>
+    <p class="desc">
+      Museum Petilasan Mbah Marijan · Bunker Kaliadem · Batu Alien · Track Air Kali Kuning
+    </p>
+  </div>
+
+  <!-- ATV -->
+  <div class="price-card">
+    <div class="price-icon">
+      <i class="fas fa-motorcycle"></i>
+    </div>
+    <h2>ATV Fun Trip</h2>
+    <p class="duration">Duration 2.5 Hour</p>
+    <h3>Rp. 450.000 / 2 Pax</h3>
+
+    <div class="divider"></div>
+
+    <p class="label">Facilities</p>
+    <p class="desc">
+      Guide · ATV · Helmet · Footwear · Snack · Locker
+    </p>
+  </div>
+
+</section>
+    
+</section>
 
 <!-- ── GALLERY ────────────────────────────── -->
   <section id="gallery" class="pad-section">
@@ -226,9 +266,7 @@
         <div class="gallery-item"><div class="gallery-item-inner g3"></div></div>
         <div class="gallery-item"><div class="gallery-item-inner g2"></div></div>
       </div>
-      <p class="text-center mt-4 text-muted" style="font-size: 0.85rem;">
-        📸 Ganti warna gradient ini dengan foto asli pakai tag <code>background-image: url('...');</code>
-      </p>
+     
     </div>
   </section>
   
@@ -240,6 +278,32 @@
     </div>
     <div class="container">
         <div class="row g-4">
+            <div class="col-md-4 reveal">
+                <div class="p-4 rounded-4" style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1);">
+                    <div style="color:var(--accent); letter-spacing:2px;" class="mb-3">★★★★★</div>
+                    <p class="fst-italic mb-4" style="color:rgba(255,255,255,0.8); font-size:0.9rem;">"Team gathering kantor kami jadi sangat berkesan! Fasilitatornya profesional, lokasi indah, dan game-nya seru banget."</p>
+                    <div class="d-flex align-items-center gap-3">
+                        <div class="rounded-circle d-flex justify-content-center align-items-center fw-bold" style="width:40px; height:40px; background:var(--primary-mid); color:var(--accent);">RA</div>
+                        <div>
+                            <div class="text-white fw-bold" style="font-size:0.85rem;">Rini Astuti</div>
+                            <div style="font-size:0.75rem; color:rgba(255,255,255,0.4);">HR Manager · PT Sinar Maju</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 reveal">
+                <div class="p-4 rounded-4" style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1);">
+                    <div style="color:var(--accent); letter-spacing:2px;" class="mb-3">★★★★★</div>
+                    <p class="fst-italic mb-4" style="color:rgba(255,255,255,0.8); font-size:0.9rem;">"Team gathering kantor kami jadi sangat berkesan! Fasilitatornya profesional, lokasi indah, dan game-nya seru banget."</p>
+                    <div class="d-flex align-items-center gap-3">
+                        <div class="rounded-circle d-flex justify-content-center align-items-center fw-bold" style="width:40px; height:40px; background:var(--primary-mid); color:var(--accent);">RA</div>
+                        <div>
+                            <div class="text-white fw-bold" style="font-size:0.85rem;">Rini Astuti</div>
+                            <div style="font-size:0.75rem; color:rgba(255,255,255,0.4);">HR Manager · PT Sinar Maju</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="col-md-4 reveal">
                 <div class="p-4 rounded-4" style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1);">
                     <div style="color:var(--accent); letter-spacing:2px;" class="mb-3">★★★★★</div>
@@ -266,7 +330,10 @@
       <p style="color:rgba(255,255,255,0.7); margin-bottom:2rem;">Hubungi kami sekarang dan dapatkan penawaran terbaik untuk kegiatan outbound Anda.</p>
       <div class="d-flex justify-content-center gap-3 flex-wrap">
         <a href="form.php" class="btn-custom-primary">Book Now →</a>
-        <a href="https://wa.me/6281234567890" target="_blank" class="btn-custom-outline d-flex align-items-center gap-2">💬 WhatsApp Kami</a>
+        <a href="https://wa.me/6281234567890" target="_blank"
+   class="btn-custom-outline d-flex align-items-center gap-2">
+   <i class="fab fa-whatsapp"></i> WhatsApp Kami
+</a>
       </div>
     </div>
   </section>
@@ -279,7 +346,7 @@
         <a href="#packages" class="text-decoration-none" style="color:rgba(255,255,255,0.5);">Packages</a>
         <a href="form.php" class="text-decoration-none" style="color:rgba(255,255,255,0.5);">Book Now</a>
     </div>
-    <div style="font-size:0.85rem; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 1.5rem;">© 2024 Wulubung Hill. Kaliurang, Yogyakarta.</div>
+    <div style="font-size:0.85rem; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 1.5rem;">© 2026 Wulubung Hill. Kaliurang, Yogyakarta.</div>
   </footer>
 
   <script>

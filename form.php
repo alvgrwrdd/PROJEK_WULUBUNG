@@ -14,21 +14,21 @@ $pilih_paket = isset($_GET['paket']) ? $_GET['paket'] : (isset($_GET['pkg']) ? $
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;700&display=swap" rel="stylesheet" />
   
   <!-- Link ke file CSS yang udah kita rapikan -->
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style1.css">
 </head>
 <body>
 
   <!-- ── NAVBAR ─────────────────────────────── -->
   <!-- Langsung di bawah body, jangan dibungkus container/div lain -->
   <nav class="form-nav">
-    <a href="index.php" class="nav-logo">Wulu<span>bung</span></a>
+    
     <a href="index.php" class="nav-back">← Kembali ke Home</a>
   </nav>
 
   <!-- ── HERO (Header Form) ─────────────────── -->
   <div class="form-hero">
     <div class="form-hero-inner">
-      <div class="step-badge">📋 Booking Form</div>
+      
       <h1 class="form-title">Booking Outbound<br>Wulubung Hill</h1>
       <p class="form-subtitle">Isi form di bawah dan tim kami akan menghubungi Anda dalam 1×24 jam.</p>
       
@@ -63,7 +63,7 @@ $pilih_paket = isset($_GET['paket']) ? $_GET['paket'] : (isset($_GET['pkg']) ? $
 
       <!-- ── DATA PEMOHON ─── -->
       <div class="form-card">
-        <div class="form-section-title">👤 Data Pemohon</div>
+        <div class="form-section-title"> Data Pemohon</div>
 
         <div class="field-row">
           <div class="field">
@@ -95,7 +95,7 @@ $pilih_paket = isset($_GET['paket']) ? $_GET['paket'] : (isset($_GET['pkg']) ? $
 
       <!-- ── PILIH PAKET ─── -->
       <div class="form-card">
-        <div class="form-section-title">🎯 Pilih Paket</div>
+        <div class="form-section-title"> Pilih Paket</div>
         <div class="pkg-options">
           
           <input type="radio" class="pkg-radio" id="pkg_BeFun" name="paket" value="BeFun" data-price="50000" data-label="Paket BeFun" <?= (strtolower($pilih_paket) == 'befun') ? 'checked' : ''; ?> required />
@@ -112,7 +112,7 @@ $pilih_paket = isset($_GET['paket']) ? $_GET['paket'] : (isset($_GET['pkg']) ? $
           <label class="pkg-label" for="pkg_BeHappy">
             <div class="pkg-dot"></div>
             <div>
-              <div class="pkg-info-name">Paket BeHappy ⭐ Populer</div>
+              <div class="pkg-info-name">Paket BeHappy Populer</div>
               <div class="pkg-info-sub">Durasi 3 Jam</div>
             </div>
             <div class="pkg-price-tag">Rp85.000/pax</div>
@@ -133,7 +133,7 @@ $pilih_paket = isset($_GET['paket']) ? $_GET['paket'] : (isset($_GET['pkg']) ? $
 
       <!-- ── ADD-ONS ─── -->
       <div class="form-card">
-        <div class="form-section-title">✨ Additional Packages <small style="font-size:0.7rem;font-weight:400;color:var(--text-light)">(Opsional)</small></div>
+        <div class="form-section-title"> Additional Packages <small style="font-size:0.7rem;font-weight:400;color:var(--text-light)">(Opsional)</small></div>
         <div class="addon-options">
             <!-- Checkbox UI untuk tampilan -->
             <input type="checkbox" class="addon-chk ui-addon" id="addon_paintball" value="Paint Ball" />
@@ -161,7 +161,7 @@ $pilih_paket = isset($_GET['paket']) ? $_GET['paket'] : (isset($_GET['pkg']) ? $
 
       <!-- ── CATATAN ─── -->
       <div class="form-card">
-        <div class="form-section-title">📝 Catatan Tambahan</div>
+        <div class="form-section-title"> Catatan Tambahan</div>
         <div class="field">
           <label class="lbl" for="notes">Kebutuhan Khusus / Tema / Request</label>
           <textarea id="notes" name="notes" placeholder="Misalnya: tema tertentu, kebutuhan khusus, pertanyaan, dsb."></textarea>

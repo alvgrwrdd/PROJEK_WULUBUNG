@@ -33,7 +33,7 @@ $result = mysqli_query($conn, "SELECT * FROM bookings ORDER BY id DESC");
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;700&display=swap" rel="stylesheet" />
     
     <!-- Link ke Master CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style1.css">
     
     <style>
         /* Styling Khusus Dashboard Admin */
