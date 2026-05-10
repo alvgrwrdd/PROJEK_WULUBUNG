@@ -12,7 +12,7 @@ if(!isset($_SESSION['admin_logged_in'])) {
     <title>Tambah Booking Manual - Wulubung Hill</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style2.css">
 </head>
 <body style="background-color: var(--earth-light);">
 
@@ -80,7 +80,7 @@ if(!isset($_SESSION['admin_logged_in'])) {
 
                             <div class="d-flex gap-2 justify-content-end">
                                 <a href="admin.php" class="btn btn-light fw-bold px-4">Batal</a>
-                                <button type="submit" name="tambah" class="btn text-white fw-bold px-4" style="background-color: var(--accent);">Simpan Kasus</button>
+                                <button type="submit" name="tambah" class="btn text-white fw-bold px-4" style="background-color: var(--accent);">Tambahkan</button>
                             </div>
 
                         </form>
