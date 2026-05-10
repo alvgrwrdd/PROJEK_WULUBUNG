@@ -2,22 +2,19 @@
 include 'koneksi.php';
 $id = isset($_GET['id']) ? $_GET['id'] : 0;
 
-// Ambil data booking terakhir
 $query = mysqli_query($conn, "SELECT * FROM bookings WHERE id = '$id'");
 $d = mysqli_fetch_assoc($query);
 
-// Jika tidak ada id, redirect ke form booking
 if (!$d) {
     header("Location: index.php");
     exit();
 }
 
-// Format Pesan WhatsApp
-$wa_admin = "6281234567890"; // Ganti dengan nomor WA Admin Wulubung
+
+$wa_admin = "6281234567890";
 $pesan_wa = "Halo Admin Wulubung,%0A%0ASaya telah melakukan booking melalui website.%0A*Nama:* ".$d['nama']."%0A*Instansi:* ".$d['instansi']."%0A*Paket:* ".$d['paket']."%0A*Jumlah Peserta:* ".$d['jumlah_peserta']." pax%0A*Tanggal Event:* ".$d['tanggal_event']."%0A*Addons:* ".$d['addons']."%0A%0AMohon info lebih lanjut. Terima kasih!";
 $wa_url = "https://wa.me/".$wa_admin."?text=".$pesan_wa;
 
-// Fungsi tglIndo jika belum terdefinisikan secara global
 function tglIndo($tanggal){
     $bulan = array (1 => 'Januari','Februari','Maret','April','Mei','Juni','Juli','Agustus','September','Oktober','November','Desember');
     $pecahkan = explode('-', $tanggal);
@@ -34,8 +31,7 @@ function tglIndo($tanggal){
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
   
-  <!-- Tambahkan link ini -->
-  <link rel="stylesheet" href="css/style1.css"> 
+  <link rel="stylesheet" href="css/style2.css"> 
 </head>
 <body class="success-body">
 

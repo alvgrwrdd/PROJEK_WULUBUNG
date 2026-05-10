@@ -7,14 +7,11 @@ if(!isset($_SESSION['admin_logged_in'])) {
 
 include 'koneksi.php';
 
-// Ambil ID dari URL
 $id = $_GET['id'];
 
-// Tarik data booking spesifik dari database
 $query = mysqli_query($conn, "SELECT * FROM bookings WHERE id='$id'");
 $data = mysqli_fetch_assoc($query);
 
-// Kalau id gak ketemu, balik ke admin
 if(!$data) {
     header("Location: admin.php");
     exit;
@@ -48,10 +45,8 @@ if(!$data) {
                     </div>
                     
                     <div class="card-body p-4 p-md-5">
-                        <!-- Form diarahkan ke update_booking.php -->
                         <form action="update_booking.php" method="POST">
                             
-                            <!-- Hidden input buat ngirim ID -->
                             <input type="hidden" name="id" value="<?= $data['id'] ?>">
 
                             <div class="row mb-3">

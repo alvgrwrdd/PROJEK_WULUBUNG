@@ -33,7 +33,7 @@ if(isset($_POST['login'])) {
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="css/style1.css">
+    <link rel="stylesheet" href="css/style2.css">
     <style>
         body {
             background: linear-gradient(135deg, var(--primary-mid), var(--primary-dark));
@@ -60,7 +60,7 @@ if(isset($_POST['login'])) {
         }
         .login-logo span { color: var(--accent); }
         .form-control {
-            padding: 0.8rem 1rem; /* Bikin kolom inputnya lebih gemuk */
+            padding: 0.8rem 1rem; 
             border-radius: 0.8rem;
             background: var(--earth-light);
             border: 1px solid rgba(0,0,0,0.1);
@@ -69,7 +69,7 @@ if(isset($_POST['login'])) {
         .btn-login {
             background: var(--accent);
             color: var(--white);
-            padding: 0.8rem; /* Bikin tombolnya lebih tinggi */
+            padding: 0.8rem; 
             border-radius: 0.8rem;
             font-weight: 700;
             width: 100%;
@@ -106,11 +106,6 @@ if(isset($_POST['login'])) {
             <button type="submit" name="login" class="btn-login">Login Masuk</button>
         </form>
         
-        <div class="text-center mt-4">
-            <a href="index.php" class="text-muted text-decoration-none" style="font-size: 0.85rem;">← Kembali ke Website</a>
-            <br><br>
-            <small class="text-muted">Belum punya akun admin? <a href="register.php" class="text-decoration-none" style="color: var(--accent); font-weight: bold;">Daftar di sini</a></small>
-        </div>
     </div>
 
 </body>

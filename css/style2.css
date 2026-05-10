@@ -1,6 +1,4 @@
-/* =========================================================
-   WULUBUNG HILL - MASTER CSS (index.php, form.php, success.php)
-   ========================================================= */
+/*WULUBUNG HILL - MASTER CSS (index.php, form.php, success.php)*/
 
 :root {
   /* Base Colors: Navy & Orange */
@@ -39,15 +37,13 @@ a { text-decoration: none; }
 ul { padding-left: 0; list-style: none; margin: 0; }
 
 
-/* =========================================================
-   1. STYLE UNTUK INDEX.PHP (LANDING PAGE)
-   ========================================================= */
+/*STYLE UNTUK INDEX.PHP (LANDING PAGE)*/
 
 /* ── NAVBAR (INDEX) ─────────────────────── */
 .hamburger span {
   width: 24px;
   height: 2px;
-  background: white; /* default */
+  background: white;
   transition: 0.3s;
 }
 .custom-nav {
@@ -63,7 +59,7 @@ ul { padding-left: 0; list-style: none; margin: 0; }
   box-shadow: 0 4px 20px rgba(0,0,0,0.1);
 }
 nav.scrolled .hamburger span {
-  background: #2c3e50; /* jadi gelap */
+  background: #2c3e50;
 }
 .logo-img {
   height: 80px;
@@ -84,7 +80,7 @@ nav.scrolled .hamburger span {
 }
 .nav-cta:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(229,154,47,0.4); color: white; }
 
-/* ── HERO (INDEX) ───────────────────────── */
+/*  HERO (INDEX) */
 #hero {
   height: 100vh; position: relative;
   display: flex; align-items: center;
@@ -108,7 +104,7 @@ nav.scrolled .hamburger span {
 .hero-title {
  font-family: 'poppins';
   font-size: clamp(2rem, 5vw, 3.5rem)!important;
-  font-weight: 800; /* lebih tebal & tegas */
+  font-weight: 800;
   line-height: 1.05;
   color: var(--white);
   margin-bottom: 1.5rem;
@@ -124,7 +120,7 @@ nav.scrolled .hamburger span {
 .stat-num { font-family: 'Playfair Display', serif; font-size: 2rem; font-weight: 900; color: var(--accent); }
 .stat-label { font-size: 0.75rem; color: rgba(255,255,255,0.6); letter-spacing: 0.05em; }
 
-/* ── TOMBOL (INDEX) ─────────────────────── */
+/* ── TOMBOL (INDEX) */
 .btn-custom-primary {
   background: var(--accent); color: var(--white);
   padding: 0.85rem 2rem; border-radius: 2rem;
@@ -134,7 +130,7 @@ nav.scrolled .hamburger span {
 .btn-custom-primary:hover { transform: translateY(-3px); box-shadow: 0 10px 28px rgba(229,154,47,0.45); color: white;}
 
 
-/* ── OTHER SECTIONS (INDEX) ─────────────── */
+/* ── OTHER SECTIONS (INDEX) */
 .pad-section { padding: 7rem 4rem; }
 .section-label {
   display: inline-flex; align-items: center; gap: 0.5rem;
@@ -144,7 +140,7 @@ nav.scrolled .hamburger span {
 .section-label::before { content: ''; width: 24px; height: 2px; background: var(--accent); }
 .section-title { font-size: clamp(2rem, 3.5vw, 2.8rem); line-height: 1.15; margin-bottom: 1.2rem; color: var(--primary-mid); }
 
-/*       ABOUT   */
+/*      ABOUT   */
 #about { background: var(--cream); }
 .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; max-width: 1100px; margin: 0 auto; align-items: center; }
 .about-visual {
@@ -179,7 +175,7 @@ nav.scrolled .hamburger span {
 .pkg-features { list-style: none; display: flex; flex-direction: column; gap: 0.7rem; margin-bottom: 2rem; }
 .pkg-feature { font-size: 0.85rem; color: rgba(255,255,255,0.8); display: flex; gap: 0.6rem; }
 .pkg-feature::before { 
-  content: "\2713"; /* ini kode ✔ */
+  content: "\2713";
   color: var(--accent); 
   font-weight: 700; 
 }
@@ -192,7 +188,7 @@ nav.scrolled .hamburger span {
   padding: 7rem 4rem;
   position: relative;
   overflow: hidden;
-  background: #000; ; /* WAJIB biar ga putih */
+  background: #000; ;
 }
 .sectit{
   color: var(--cream);
@@ -222,7 +218,7 @@ nav.scrolled .hamburger span {
   opacity: 0;
   animation: slideFade 18s infinite;
   backface-visibility: hidden;
-  transform: translateZ(0); /* penting anti flicker */
+  transform: translateZ(0);
 
 }
 
@@ -242,7 +238,6 @@ nav.scrolled .hamburger span {
   animation-delay: 12s;
 }
 
-/* ANIMASI CINEMATIC */
 @keyframes slideFade {
   0%   { opacity: 0; transform: scale(1.05); }
   10%  { opacity: 1; }
@@ -296,28 +291,6 @@ nav.scrolled .hamburger span {
   box-shadow: 0 25px 60px rgba(0,0,0,0.15);
 }
 
-/* ICON BULAT */
-.price-icon {
-  width: 90px;
-  height: 90px;
-  font-size: 36px;
-
-  background: #e59a2f; /* FULL warna, bukan rgba */
-  color: #ffffff;
-
-  border-radius: 50%;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  position: absolute;
-  top: -45px;
-  left: 50%;
-  transform: translateX(-50%);
-
-  box-shadow: 0 10px 25px rgba(0,0,0,0.25); /* shadow aja yg transparan gapapa */
-}
 
 /* TEXT */
 .price-card h2 {

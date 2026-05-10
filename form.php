@@ -1,5 +1,4 @@
 <?php
-// Tangkap parameter paket dari URL (dari klik di landing page)
 $pilih_paket = isset($_GET['paket']) ? $_GET['paket'] : (isset($_GET['pkg']) ? $_GET['pkg'] : '');
 ?>
 <!DOCTYPE html>
@@ -13,15 +12,12 @@ $pilih_paket = isset($_GET['paket']) ? $_GET['paket'] : (isset($_GET['pkg']) ? $
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;700&display=swap" rel="stylesheet" />
   
-  <!-- Link ke file CSS yang udah kita rapikan -->
-  <link rel="stylesheet" href="css/style1.css">
+  <link rel="stylesheet" href="css/style2.css">
 </head>
 <body>
 
   <!-- ── NAVBAR ─────────────────────────────── -->
-  <!-- Langsung di bawah body, jangan dibungkus container/div lain -->
   <nav class="form-nav">
-    
     <a href="index.php" class="nav-back">← Kembali ke Home</a>
   </nav>
 
@@ -32,7 +28,6 @@ $pilih_paket = isset($_GET['paket']) ? $_GET['paket'] : (isset($_GET['pkg']) ? $
       <h1 class="form-title">Booking Outbound<br>Wulubung Hill</h1>
       <p class="form-subtitle">Isi form di bawah dan tim kami akan menghubungi Anda dalam 1×24 jam.</p>
       
-      <!-- Indikator Step -->
       <div class="steps">
         <div class="step active"><div class="step-dot">1</div><span class="step-label">Isi Form</span></div>
         <div class="step-line"></div>
@@ -43,10 +38,8 @@ $pilih_paket = isset($_GET['paket']) ? $_GET['paket'] : (isset($_GET['pkg']) ? $
     </div>
   </div>
 
-  <!-- ── WADAH FORM UTAMA ───────────────────── -->
   <div class="form-wrap">
 
-    <!-- Summary bar (Harga & Nama Paket yang ter-update otomatis) -->
     <div class="summary-bar">
       <div>
         <div class="summary-label">Paket dipilih</div>
@@ -58,7 +51,6 @@ $pilih_paket = isset($_GET['paket']) ? $_GET['paket'] : (isset($_GET['pkg']) ? $
       </div>
     </div>
 
-    <!-- Form dikirim ke proses_booking.php -->
     <form method="POST" action="proses_booking.php" id="bookingForm">
 
       <!-- ── DATA PEMOHON ─── -->
@@ -154,7 +146,6 @@ $pilih_paket = isset($_GET['paket']) ? $_GET['paket'] : (isset($_GET['pkg']) ? $
             <input type="checkbox" class="addon-chk ui-addon" id="addon_lunch" value="Lunch Package" />
             <label class="addon-label" for="addon_lunch"><div class="chk-box"></div> Lunch Package</label>
             
-            <!-- Hidden input ini yang bakal dikirim diam-diam ke proses_booking.php -->
             <input type="hidden" name="addons" id="hidden_addons" value="">
         </div>
       </div>

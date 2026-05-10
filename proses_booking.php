@@ -15,7 +15,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
               VALUES ('$nama', '$instansi', '$whatsapp', '$tanggal_event', '$paket', '$jumlah_peserta', '$addons', '$notes')";
 
     if (mysqli_query($conn, $query)) {
-        // Ambil ID terakhir untuk dikirim ke success page
         $last_id = mysqli_insert_id($conn);
         header("Location: success.php?id=" . $last_id);
         exit();
