@@ -1,5 +1,6 @@
 <?php
 session_start();
+include 'koneksi.php';
 
 if(isset($_SESSION['admin_logged_in'])) {
     header("Location: admin.php");
@@ -12,7 +13,9 @@ if(isset($_POST['login'])) {
     $username = $_POST['username'];
     $password = $_POST['password'];
 
-    if($username === 'admin' && $password === '123') {
+    $query = mysqli_query($conn, "SELECT * FROM admin WHERE username='$username' AND password='$password'");
+    
+    if(mysqli_num_rows($query) > 0) {
         $_SESSION['admin_logged_in'] = true;
         header("Location: admin.php");
         exit;
@@ -41,11 +44,11 @@ if(isset($_POST['login'])) {
         }
         .login-card {
             background: var(--white);
-            border-radius: 15px;
-            padding: 3px;
+            border-radius: 1.5rem;
+            padding: 3rem; /* Ini yang bikin lega (jarak dari pinggir) */
             width: 100%;
             max-width: 400px;
-          
+            box-shadow: 0 15px 35px rgba(0,0,0,0.2); /* Tambahin bayangan dikit biar cakep */
         }
         .login-logo {
            
@@ -57,21 +60,26 @@ if(isset($_POST['login'])) {
         }
         .login-logo span { color: var(--accent); }
         .form-control {
-
-            border-radius:15px;
+            padding: 0.8rem 1rem; /* Bikin kolom inputnya lebih gemuk */
+            border-radius: 0.8rem;
             background: var(--earth-light);
-          
+            border: 1px solid rgba(0,0,0,0.1);
         }
         
         .btn-login {
             background: var(--accent);
             color: var(--white);
+            padding: 0.8rem; /* Bikin tombolnya lebih tinggi */
+            border-radius: 0.8rem;
             font-weight: 700;
             width: 100%;
             border: none;
-            
+            transition: transform 0.2s;
         }
-       
+        .btn-login:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(229,154,47,0.3);
+        }   
     </style>
 </head>
 <body>
@@ -100,6 +108,8 @@ if(isset($_POST['login'])) {
         
         <div class="text-center mt-4">
             <a href="index.php" class="text-muted text-decoration-none" style="font-size: 0.85rem;">← Kembali ke Website</a>
+            <br><br>
+            <small class="text-muted">Belum punya akun admin? <a href="register.php" class="text-decoration-none" style="color: var(--accent); font-weight: bold;">Daftar di sini</a></small>
         </div>
     </div>
 
