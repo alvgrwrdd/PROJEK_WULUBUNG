@@ -64,7 +64,7 @@
   <section id="about" class="pad-section">
     <div class="about-grid">
       <div class="about-visual reveal">
-       <div class="about-visual-img" style="background-image: url('asset/bef.jpg');"></div>
+       <div class="about-visual-img" style="background-image: url('../asset/bef.jpg');"></div>
         <div class="about-badge">Since 2009</div>
         <div class="about-card">
         
