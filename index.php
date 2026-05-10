@@ -14,7 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   
   <!-- Memanggil File CSS Eksternal -->
-  <link rel="stylesheet" href="css/style1.css">
+  <link rel="stylesheet" href="css/style2.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
@@ -64,7 +64,7 @@
   <section id="about" class="pad-section">
     <div class="about-grid">
       <div class="about-visual reveal">
-       <div class="about-visual-img" style="background-image: url('../asset/bef.jpg');"></div>
+       <div class="about-visual-img" style="background-image: url('asset/bef.jpg');"></div>
         <div class="about-badge">Since 2009</div>
         <div class="about-card">
         
@@ -262,9 +262,9 @@
         <div class="gallery-item"><div class="gallery-item-inner g2"></div></div>
         <div class="gallery-item"><div class="gallery-item-inner g3"></div></div>
         <div class="gallery-item"><div class="gallery-item-inner g4"></div></div>
-        <div class="gallery-item"><div class="gallery-item-inner g1"></div></div>
-        <div class="gallery-item"><div class="gallery-item-inner g3"></div></div>
-        <div class="gallery-item"><div class="gallery-item-inner g2"></div></div>
+        <div class="gallery-item"><div class="gallery-item-inner g5"></div></div>
+        <div class="gallery-item"><div class="gallery-item-inner g6"></div></div>
+        <div class="gallery-item"><div class="gallery-item-inner g7"></div></div>
       </div>
      
     </div>
