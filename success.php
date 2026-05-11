@@ -35,7 +35,7 @@ function tglIndo($tanggal){
 </head>
 <body class="success-body">
 
-<a href="index.php" class="success-logo">Wulu<em>bung</em></a>
+<a href="index.php" class="success-logo">Wulu<span>bung</span></a>
 
 <div class="success-card">
   <div class="success-icon-wrap">🎉</div>
